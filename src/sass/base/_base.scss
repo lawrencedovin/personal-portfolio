@@ -27,7 +27,7 @@ html {
 body {
 	box-sizing: border-box; /*changes box model, so that the borders and the paddings are not added to the total width or height for a box.
                               Without this the borders and paddings are added to the height or width of an element*/
-    padding: 3rem;    
+    // padding: 0 5rem;    
     
     @include respond(tablet-portrait) { // width < 900?
         padding: 0;

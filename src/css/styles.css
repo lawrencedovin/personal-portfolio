@@ -47,8 +47,7 @@ html {
 body {
   box-sizing: border-box;
   /*changes box model, so that the borders and the paddings are not added to the total width or height for a box.
-                              Without this the borders and paddings are added to the height or width of an element*/
-  padding: 3rem; }
+                              Without this the borders and paddings are added to the height or width of an element*/ }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -59,3 +58,21 @@ body {
 
 .btn {
   color: blue; }
+
+.navbar {
+  padding: 1.6rem 4.8rem;
+  background: #25859A; }
+  .navbar__logo {
+    margin-right: 4.8rem; }
+  .navbar__link {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-right: 8px;
+    text-transform: uppercase; }
+    .navbar__link:hover {
+      color: #38FFFF; }
+  .navbar__icon--portfolio {
+    height: 3.2rem;
+    width: 3.2rem; }

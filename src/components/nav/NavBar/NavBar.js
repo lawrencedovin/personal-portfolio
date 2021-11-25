@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 
 function NavBar() {
@@ -35,7 +37,12 @@ function NavBar() {
             <div class="d-flex">
                 <ul class="navbar-nav me-2">
                     <li class="nav-item">
-                      <Link className="nav-link navbar__social" to="/about">About</Link>
+                      <Link className="nav-link navbar__social" to="/about">
+                        {/* <FontAwesomeIcon icon={['fas', 'coffee']} /> */}
+                        {/* <FontAwesomeIcon icon={faFacebook} /> */}
+                        {/* <FontAwesomeIcon icon='facebook' /> */}
+                        
+                      </Link>
                     </li>
                     <li class="nav-item">
                       <Link className="nav-link navbar__social" to="/resume">Resume</Link>

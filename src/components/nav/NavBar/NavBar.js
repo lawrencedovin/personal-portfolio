@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+// import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 
 function NavBar() {
@@ -36,22 +36,15 @@ function NavBar() {
             <div class="me-auto"></div>
             <div class="d-flex">
                 <ul class="navbar-nav me-2">
-                    <li class="nav-item">
-                      <Link className="nav-link navbar__social" to="/about">
-                        {/* <FontAwesomeIcon icon={['fas', 'coffee']} /> */}
-                        {/* <FontAwesomeIcon icon={faFacebook} /> */}
-                        {/* <FontAwesomeIcon icon='facebook' /> */}
-                        
-                      </Link>
+                    <li class="nav-item navbar__social-container">
+                      <a className="nav-link navbar__social" href="https://www.linkedin.com/in/lawrence-dovin/" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+                      </a>
                     </li>
-                    <li class="nav-item">
-                      <Link className="nav-link navbar__social" to="/resume">Resume</Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link className="nav-link navbar__social" to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link className="nav-link navbar__social" to="/contact">Contact</Link>
+                    <li class="nav-item navbar__social-container">
+                      <a className="nav-link navbar__social" href="https://github.com/lawrencedovin/" target="_blank" rel="noreferrer">
+                          <FontAwesomeIcon icon={['fab', 'github-alt']} />
+                      </a>
                     </li>
                 </ul>
             </div>

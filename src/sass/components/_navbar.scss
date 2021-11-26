@@ -11,7 +11,7 @@
         font-size: $font-size-small;
         margin-right: 8px;
         text-transform: uppercase;
-        &:hover{
+        &:hover {
             color: $color-blue-light;
         }
     }
@@ -19,6 +19,20 @@
         &--portfolio {
             height: 3.2rem;
             width: 3.2rem;
+        }
+    }
+
+    &__social {
+        color: $color-white;
+        font-size: $font-size-medium;
+
+        &-container:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        
+        &:hover {
+            color: $color-blue-light;
         }
     }
 }

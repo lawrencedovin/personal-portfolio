@@ -76,3 +76,10 @@ body {
   .navbar__icon--portfolio {
     height: 3.2rem;
     width: 3.2rem; }
+  .navbar__social {
+    color: #fff;
+    font-size: 1.6rem; }
+    .navbar__social-container:not(:last-child) {
+      margin-right: 8px; }
+    .navbar__social:hover {
+      color: #38FFFF; }

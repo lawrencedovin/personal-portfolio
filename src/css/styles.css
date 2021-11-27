@@ -63,13 +63,13 @@ body {
   padding: 1.6rem 4.8rem;
   background: #25859A; }
   .navbar__logo {
-    margin-right: 4.8rem; }
+    margin-right: 3.2rem; }
   .navbar__link {
     font-family: "Poppins", sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 1.2rem;
-    margin-right: 8px;
+    margin-right: 1.6rem;
     text-transform: uppercase; }
     .navbar__link:hover {
       color: #38FFFF; }
@@ -80,6 +80,6 @@ body {
     color: #fff;
     font-size: 1.6rem; }
     .navbar__social-container:not(:last-child) {
-      margin-right: 8px; }
+      margin-right: 1.6rem; }
     .navbar__social:hover {
       color: #38FFFF; }

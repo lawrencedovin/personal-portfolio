@@ -2,14 +2,14 @@
     padding: 1.6rem 4.8rem;
     background: $color-blue-dark;
     &__logo {
-        margin-right: 4.8rem;
+        margin-right: 3.2rem;
     }
     &__link {
         font-family: $font-primary;
         color: $color-white;
         font-weight: 400;
         font-size: $font-size-small;
-        margin-right: 8px;
+        margin-right: 1.6rem;
         text-transform: uppercase;
         &:hover {
             color: $color-blue-light;
@@ -27,7 +27,7 @@
         font-size: $font-size-medium;
 
         &-container:not(:last-child) {
-            margin-right: 8px;
+            margin-right: 1.6rem;
         }
 
         

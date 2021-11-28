@@ -1,15 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Hero from '../../Hero/Hero';
 
 
-const Home = () => (
-  <div data-testid="Home">
-    Home Component
-  </div>
-);
-
-Home.propTypes = {};
-
-Home.defaultProps = {};
-
+function Home () {
+  return(
+    <div data-testid="Home">
+      Home Component
+      <Hero />
+    </div>
+  );
+}
 export default Home;

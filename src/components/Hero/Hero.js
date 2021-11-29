@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 
 const Hero = () => (
-  <div data-testid="Hero">
-    Hero Component
+  <div className="hero" data-testid="Hero">
+    
   </div>
 );
 

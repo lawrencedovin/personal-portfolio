@@ -1,0 +1,6 @@
+.hero {
+    height: calc(100vh - 7.2rem);
+    width: 100%;
+    background: linear-gradient(180deg, $color-purple 15.68%, $color-blue-dark 65.95%, $color-blue-light 116.22%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+}

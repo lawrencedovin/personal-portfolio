@@ -56,11 +56,17 @@ body {
   background-color: #55c57a;
   color: #fff; }
 
+.hero {
+  height: calc(100vh - 7.2rem);
+  width: 100%;
+  background: linear-gradient(180deg, #36015F 15.68%, #0095C5 65.95%, #38FFFF 116.22%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%); }
+
 .btn {
   color: blue; }
 
 .navbar {
-  padding: 1.6rem 4.8rem;
+  padding: 1.6rem 4.8rem .8rem;
   background: #36015F; }
   .navbar__logo {
     margin-right: 3.2rem; }

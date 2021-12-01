@@ -23,9 +23,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 /*COLORS*/
-/*FONT*/
-/*FONT-FAMILY*/
-/*FONT-WEIGHT*/
 /*GRID*/
 *,
 *::after,
@@ -35,8 +32,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  font-family: "Poppins", sans-serif; }
+  font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -59,39 +55,43 @@ body {
   background-color: #55c57a;
   color: #fff; }
 
-.hero {
-  height: calc(100vh - 6.2rem);
-  width: 100%;
-  background: linear-gradient(180deg, #36015F 15.68%, #0095C5 65.95%, #38FFFF 116.22%);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
-  padding: 0 4.8rem; }
-  .hero__container--left, .hero__container--right {
-    display: inline-block;
-    height: 100%;
-    text-align: center;
-    position: relative; }
-  .hero__details {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30rem; }
-  .hero__name {
-    font-size: 3.2rem;
-    color: #38FFFF;
-    margin-bottom: 2.4rem; }
-  .hero__underline--big, .hero__underline--small {
-    background: #fff;
-    height: .4rem;
-    border-radius: .4rem;
-    margin: 0 auto; }
-  .hero__underline--big {
-    width: 10.4rem; }
-  .hero__underline--small {
-    width: 4rem;
-    margin: 1.4rem auto 2.4rem; }
-
+/*FONT-FAMILY*/
+/*FONT*/
+/*FONT-WEIGHT*/
 .btn {
-  color: blue; }
+  border-radius: 4px;
+  background-color: #0095C5;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  width: 16rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3.2rem; }
+
+.btn span {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+
+.btn span:after {
+  content: '\260E';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
+
+.btn:hover span {
+  padding-right: 3.2rem; }
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0; }
 
 .navbar {
   padding: 1.6rem 4.8rem .8rem;
@@ -112,7 +112,7 @@ body {
     width: 3.2rem; }
   .navbar__social {
     color: #fff;
-    font-size: 1.6rem; }
+    font-size: 2.4rem; }
     .navbar__social-container:not(:last-child) {
       margin-right: 1.6rem; }
     .navbar__social:hover {
@@ -120,3 +120,38 @@ body {
 
 .container-fluid {
   padding: 0; }
+
+.hero {
+  height: calc(100vh - 6.2rem);
+  width: 100%;
+  background: linear-gradient(180deg, #36015F 15.68%, #0095C5 65.95%, #38FFFF 116.22%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  padding: 0 4.8rem; }
+  .hero__container--left, .hero__container--right {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    position: relative; }
+  .hero__details {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 30rem; }
+  .hero__name, .hero__title {
+    color: #38FFFF;
+    font-family: 'Montserrat'; }
+  .hero__name {
+    font-size: 4rem;
+    margin-bottom: 2.4rem; }
+  .hero__underline--big, .hero__underline--small {
+    background: #fff;
+    height: .4rem;
+    border-radius: .4rem;
+    margin: 0 auto; }
+  .hero__underline--big {
+    width: 10.4rem; }
+  .hero__underline--small {
+    width: 4rem;
+    margin: 1.4rem auto 2.4rem; }
+  .hero__title {
+    font-size: 2.4rem; }

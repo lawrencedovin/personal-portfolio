@@ -25,14 +25,19 @@
 
     &__details {
         position: absolute;
-        top: 50%;
+        top: 35%;
         transform: translateY(-50%);
         width: 30rem;
     }
 
+    &__name,
+    &__title {
+        color: $color-blue-light;
+        font-family: 'Montserrat';
+    }
+
     &__name {
         font-size: $font-size-large;
-        color: $color-blue-light;
         margin-bottom: 2.4rem;
     }
 
@@ -53,6 +58,10 @@
             width: 4rem;
             margin: 1.4rem auto 2.4rem;
         }
+    }
+
+    &__title {
+        font-size: 2.4rem;
     }
 }
 

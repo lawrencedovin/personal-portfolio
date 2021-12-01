@@ -24,6 +24,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 /*COLORS*/
 /*FONT*/
+/*FONT-FAMILY*/
+/*FONT-WEIGHT*/
 /*GRID*/
 *,
 *::after,
@@ -33,7 +35,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -62,9 +65,30 @@ body {
   background: linear-gradient(180deg, #36015F 15.68%, #0095C5 65.95%, #38FFFF 116.22%);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
   padding: 0 4.8rem; }
-
-.hero__container--left, .hero__container--right {
-  display: inline-block; }
+  .hero__container--left, .hero__container--right {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    position: relative; }
+  .hero__details {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30rem; }
+  .hero__name {
+    font-size: 3.2rem;
+    color: #38FFFF;
+    margin-bottom: 2.4rem; }
+  .hero__underline--big, .hero__underline--small {
+    background: #fff;
+    height: .4rem;
+    border-radius: .4rem;
+    margin: 0 auto; }
+  .hero__underline--big {
+    width: 10.4rem; }
+  .hero__underline--small {
+    width: 4rem;
+    margin: 1.4rem auto 2.4rem; }
 
 .btn {
   color: blue; }

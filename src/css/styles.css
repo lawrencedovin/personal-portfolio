@@ -57,10 +57,14 @@ body {
   color: #fff; }
 
 .hero {
-  height: calc(100vh - 7.2rem);
+  height: calc(100vh - 6.2rem);
   width: 100%;
   background: linear-gradient(180deg, #36015F 15.68%, #0095C5 65.95%, #38FFFF 116.22%);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  padding: 0 4.8rem; }
+
+.hero__container--left, .hero__container--right {
+  display: inline-block; }
 
 .btn {
   color: blue; }
@@ -89,3 +93,6 @@ body {
       margin-right: 1.6rem; }
     .navbar__social:hover {
       color: #38FFFF; }
+
+.container-fluid {
+  padding: 0; }

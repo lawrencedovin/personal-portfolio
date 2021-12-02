@@ -11,7 +11,7 @@ function NavBar() {
         <div class="container-fluid">
           <Link className="navbar-brand navbar__logo" to="/">
             {/* <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" /> */}
-            <img src={process.env.PUBLIC_URL + 'icons/portfolio-icon.svg'} className="navbar__icon--portfolio" alt="github"/>
+            <img src={process.env.PUBLIC_URL + 'icons/portfolio-icon.svg'} className="navbar__icon--portfolio" alt="profile logo"/>
           </Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

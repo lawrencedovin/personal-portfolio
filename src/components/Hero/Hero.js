@@ -18,7 +18,9 @@ function Hero() {
         </div>
       </div>
       <div className="hero__container--right">
-        right
+        <div className="hero__frame">
+          <img src={process.env.PUBLIC_URL + 'hero-image.jpg'} className="hero__image" alt="lawrence"/>
+        </div>
       </div>
     </div>
   );

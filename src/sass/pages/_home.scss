@@ -1,9 +1,20 @@
 .hero {
     height: calc(100vh - 6.2rem);
     width: 100%;
-    background: linear-gradient(180deg, $color-purple 15.68%, $color-blue-dark 65.95%, $color-blue-light 116.22%);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
-    padding: 0 4.8rem;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, $color-purple 15.68%, $color-blue-dark 65.95%, $color-blue-light 116.22%);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+    }
 
     &__container {
         &--left,
@@ -11,7 +22,8 @@
             display: inline-block;
             height: 100%;
             text-align: center;
-            position: relative;
+            position: absolute;
+            padding: 0 4.8rem;
         }
     
         &--left {
@@ -19,7 +31,7 @@
         }
     
         &--right {
-            
+            width: 100%;
         }
     }
 
@@ -33,7 +45,7 @@
     &__name,
     &__title {
         color: $color-blue-light;
-        font-family: 'Montserrat';
+        font-family: $font-secondary;
     }
 
     &__name {
@@ -61,7 +73,59 @@
     }
 
     &__title {
-        font-size: 2.4rem;
+        font-size: $font-size-medium;
+    }
+
+    &__frame {
+        background-color:#ddc;
+        border:solid 5vmin #eee;
+        border-bottom-color:#fff;
+        border-left-color:#eee;
+        border-radius:2px;
+        border-right-color:#eee;
+        border-top-color:#ddd;
+        box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+        box-sizing:border-box;
+        display:inline-block;
+        margin:10vh 10vw;
+        // height:80vh;
+        // padding:8vmin;
+        position:relative;
+        text-align:center;
+        &:before {
+          border-radius:2px;
+          bottom:-2vmin;
+          box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+          content:"";
+          left:-2vmin;
+          position:absolute;
+          right:-2vmin;
+          top:-2vmin;
+        }
+        &:after {
+          border-radius:2px;
+          bottom:-2.5vmin;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+          content:"";
+          left:-2.5vmin;
+          position:absolute;
+          right:-2.5vmin;
+          top:-2.5vmin;
+        }
+    }
+
+
+    &__image {
+        // position: absolute;
+        // top: 35%;
+        // transform: translateY(-50%);  
+        border:solid 2px;
+        border-bottom-color:#ffe;
+        border-left-color:#eed;
+        border-right-color:#eed;
+        border-top-color:#ccb;
+        max-height:100%;
+        max-width:100%;
     }
 }
 

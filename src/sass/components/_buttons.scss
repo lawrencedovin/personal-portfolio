@@ -1,8 +1,8 @@
 .btn {
-    border-radius: 4px;
-    background-color: $color-blue-dark;
+    border-radius: 4rem;
+    background-color: $color-white;
     border: none;
-    color: $color-white;
+    color: $color-blue-dark;
     text-align: center;
     font-size: 1.6rem;
     padding: 1.2rem;
@@ -13,7 +13,7 @@
   }
   
   .btn span {
-    color: $color-white;
+    color: $color-blue-dark;
     cursor: pointer;
     display: inline-block;
     position: relative;

@@ -206,3 +206,5 @@ body {
     top: 40%;
     transform: translateY(-50%);
     left: 36%; }
+  .hero__container--preview {
+    padding: 0 4.8rem; }

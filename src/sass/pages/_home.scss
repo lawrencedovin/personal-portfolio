@@ -138,4 +138,10 @@
         transform: translateY(-50%);
         left: 36%;
     }
+
+    &__container {
+        &--preview {
+            padding: 0 4.8rem;
+        }
+    }
 }

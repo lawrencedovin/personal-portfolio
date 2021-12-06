@@ -144,4 +144,10 @@
             padding: 0 4.8rem;
         }
     }
+
+    &__item {
+        &--preview {
+            text-align: center;
+        }
+    }
 }

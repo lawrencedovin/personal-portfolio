@@ -17,7 +17,7 @@ function Hero() {
               <div className="hero__title">
                   Software Engineer
               </div>
-              <a href="/" className="hero__contact-btn btn"><span>Contact Me</span></a>
+              <a href="/" className="hero__button--contact btn"><span>Contact Me</span></a>
             </div>
           </div>
         </div>

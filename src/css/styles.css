@@ -64,9 +64,7 @@ body {
 
 .btn {
   border-radius: 4rem;
-  background-color: #fff;
   border: none;
-  color: #0095C5;
   text-align: center;
   font-size: 1.6rem;
   padding: 1.2rem;
@@ -76,14 +74,12 @@ body {
   margin-top: 3.2rem; }
 
 .btn span {
-  color: #0095C5;
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s; }
 
 .btn span:after {
-  content: '\260E';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -96,6 +92,20 @@ body {
 .btn:hover span:after {
   opacity: 1;
   right: 0; }
+
+.hero__button--contact {
+  background-color: #fff;
+  color: #0095C5; }
+
+.hero__button--contact span {
+  color: #0095C5; }
+
+.hero__button--contact span:after {
+  content: '\260E'; }
+
+.hero__button--preview {
+  background-color: #36015F;
+  color: #fff; }
 
 .navbar {
   padding: 1.6rem 4.8rem .8rem;
@@ -208,3 +218,5 @@ body {
     left: 36%; }
   .hero__container--preview {
     padding: 0 4.8rem; }
+  .hero__item--preview {
+    text-align: center; }

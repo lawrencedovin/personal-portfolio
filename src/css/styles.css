@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 $breakpoint arguement choices:
 - phone
@@ -106,6 +107,18 @@ body {
 .hero__button--preview {
   background-color: #36015F;
   color: #fff; }
+
+.hero__button--preview span {
+  color: #fff; }
+
+.hero__button--preview-about span:after {
+  content: '🖊️'; }
+
+.hero__button--preview-resume span:after {
+  content: '📄'; }
+
+.hero__button--preview-portfolio span:after {
+  content: '💼'; }
 
 .navbar {
   padding: 1.6rem 4.8rem .8rem;

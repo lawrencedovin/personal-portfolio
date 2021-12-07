@@ -53,5 +53,21 @@
         background-color: $color-purple;
         color: $color-white;
       }
+
+      &--preview span {
+        color: $color-white;
+      }
+
+      &--preview-about span:after {
+        content: '🖊️';
+      }
+
+      &--preview-resume span:after {
+        content: '📄';
+      }
+
+      &--preview-portfolio span:after {
+        content: '💼';
+      }
     }
   }

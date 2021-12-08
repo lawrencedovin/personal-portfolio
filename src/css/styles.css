@@ -233,3 +233,10 @@ body {
     padding: 0 4.8rem; }
   .hero__item--preview {
     text-align: center; }
+
+.contact__form {
+  padding: 8rem 4rem;
+  padding-left: 33.6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+  .contact__form--info {
+    padding: 4.8rem 5.6rem; }

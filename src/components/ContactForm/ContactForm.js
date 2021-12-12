@@ -2,12 +2,16 @@ import React from 'react';
 
 
 function ContactForm() {
-  <div data-testid="ContactForm">
-    <div className="contact__form--info"></div>
-    <form className="contact__form">
+  return(
+    <div data-testid="ContactForm">
+      <div className="contact__form-container">
+        <div className="contact__form--info"></div>
+        <form className="contact__form">
 
-    </form>
-  </div>
+        </form>
+      </div>
+    </div>
+  )
 };
 
 export default ContactForm;

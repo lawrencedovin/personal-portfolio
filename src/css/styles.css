@@ -244,6 +244,16 @@ body {
     display: inline-block;
     background: linear-gradient(161.18deg, #36015F -9.31%, rgba(36, 0, 41, 0) 108.92%);
     filter: drop-shadow(0px 6px 20px rgba(37, 133, 154, 0.3)); }
+  .contact__form--info-title, .contact__form--info-details {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 300;
+    text-align: left; }
+  .contact__form--info-title {
+    font-size: 2.4rem;
+    margin-bottom: 6.4rem; }
+  .contact__form--info-details:not(:last-child) {
+    padding-bottom: 2.4rem; }
   .contact__form-container {
     margin-top: 25.6rem;
     text-align: center; }
